@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/texas-sammy/static/css/main.d343aeb2.css",
+    "main.js": "/texas-sammy/static/js/main.f6e3aac9.js",
+    "static/media/HomePagePic_2.png": "/texas-sammy/static/media/HomePagePic_2.4263ac94f53949017836.png",
+    "static/media/Splash_Background.jpg": "/texas-sammy/static/media/Splash_Background.22637f6b3acb05d25a64.jpg",
+    "static/media/TopLogo.png": "/texas-sammy/static/media/TopLogo.df3f10465d250b917784.png",
+    "static/media/Logo_Option2.png": "/texas-sammy/static/media/Logo_Option2.b2af06c7421dfb063d88.png",
+    "index.html": "/texas-sammy/index.html",
+    "main.d343aeb2.css.map": "/texas-sammy/static/css/main.d343aeb2.css.map",
+    "main.f6e3aac9.js.map": "/texas-sammy/static/js/main.f6e3aac9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d343aeb2.css",
+    "static/js/main.f6e3aac9.js"
+  ]
+}
