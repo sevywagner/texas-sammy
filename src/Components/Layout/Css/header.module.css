@@ -1,0 +1,93 @@
+.nav-item {
+    font-family: 'Avenir';
+    text-decoration: none;
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 2px;
+    color: rgb(79, 79, 79);
+    line-height: 70px;
+    font-weight: 30%;
+}
+
+.nav-item:hover {
+    animation: nav-hover .3s ease-in;
+    background-color: rgb(213, 138, 0);
+    color: white;
+}
+
+.logo {
+    height: 20vh;
+    width: 100%;
+    background-image: url('./../../../Pictures/TopLogo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.small-logo {
+    background-image: url('./../../../Pictures/Logo_Option2.png');
+    height: 10vh;
+    background-size: contain;
+    width: 10vh;
+    margin-bottom: 2vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.donate {
+    width: 10vh;
+    margin-right: 5vh;
+    margin-top: 3vh;
+}
+
+.donate a {
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .routes {
+        margin-left: -5vh;
+    }
+
+    .nav-item {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .small-logo {
+        display: none;
+    }
+
+    .donate {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@keyframes nav-hover {
+    from {
+        background-color: inherit;
+        color: inherit;
+    }
+    to {
+        background-color: rgb(213, 138, 0);
+        color: white;
+    }
+}

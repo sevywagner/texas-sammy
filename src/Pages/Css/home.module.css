@@ -1,0 +1,52 @@
+.back-img1 {
+    width: 100%;
+    background-image: url('./../../Pictures/Splash_Background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.back-img2 {
+    width: 100%;
+    background-image: url('./../../Pictures/HomePagePic_2.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-size: 7vh;
+    text-align: left;
+    color: rgb(205, 115, 4);
+}
+
+.home-pg {
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Avenir';
+}
+
+.block {
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+@media only screen and (max-width: 700px) {
+    .back-img1 {
+        height: 30vh;
+        background-size: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .home-pg {
+        text-align: center;
+    }
+}
