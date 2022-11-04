@@ -10,11 +10,11 @@ const AnimatedRoutes = () => {
     return (
         <Outline>
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/alumni' element={<Alumni />} />
-                <Route path='/contact' element={<Contact />} />
-                <Route path='/council' element={<Council />} />
-                <Route path='/recruitment' element={<Recruitment />} />
+                <Route path='/texas-sammy' element={<Home />} />
+                <Route path='/texas-sammy/alumni' element={<Alumni />} />
+                <Route path='/texas-sammy/contact' element={<Contact />} />
+                <Route path='/texas-sammy/council' element={<Council />} />
+                <Route path='/texas-sammy/recruitment' element={<Recruitment />} />
             </Routes>
         </Outline>
     );
