@@ -1,0 +1,9 @@
+.alumni {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content {
+    width: 80%;
+}
