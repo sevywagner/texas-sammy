@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import styles from './Css/sidebar.module.css';
+import sidebarContext from "../Context/sidebar-context";
+import { useContext } from "react";
 
 const Sidebar = (props) => {
+    const sideCtx = useContext(sidebarContext)
+
     return (
         <div className={styles.sidebar}>
             <p className={styles.title}>{props.title}</p>

@@ -1,0 +1,9 @@
+.content {
+    width: 80%;
+}
+
+.centennial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

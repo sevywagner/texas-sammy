@@ -21,9 +21,9 @@ const Alumni = () => {
 
     useEffect(() => {
         sideCtx.setPathsHandler(paths);
+        sideCtx.setTitleHandler('Alumni');
         sideCtx.setFallBackHandler('texas-sammy');
-        //eslint-disable-next-line 
-    }, []);
+    }, [sideCtx]);
 
     return (
         <motion.div
