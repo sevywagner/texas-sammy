@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(92, 0, 128);
+    font-family: 'proxima-nova';
+    color: white;
+    font-size: 25px;
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta {
+    background-image: url('./../../../Pictures/insta.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 7vh;
+}
+
+.facebook {
+    background-image: url('./../../../Pictures/facebook.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 7vh;
+}
+
+.shield {
+    background-image: url('./../../../Pictures/FooterShield.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 25vh;
+}
