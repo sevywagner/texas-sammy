@@ -7,3 +7,15 @@
 .content {
     width: 80%;
 }
+
+.composites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.composite-nav {
+    background-color: whitesmoke;
+    border: none;
+    font-size: 40px;
+}

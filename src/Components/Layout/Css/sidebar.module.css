@@ -5,6 +5,8 @@
 .title {
     font-size: 20px;
     font-family: 'Avenir';
+    text-align: left;
+    margin-left: 10px;
 }
 
 .links {
@@ -15,20 +17,21 @@
 .link-item {
     text-decoration: none;
     padding: 10px;
-    color: rgb(213, 138, 0);
+    color: purple;
+    text-align: left;
 }
 
 .link-item:hover {
     animation: nav-hover .3s ease-in;
-    color: purple;
+    color: rgb(213, 138, 0);
 }
 
 @keyframes nav-hover {
     0% {
-        color: rgb(213, 138, 0);
+        color: purple;
     }
 
     100% {
-        color: purple;
+        color: rgb(213, 138, 0);
     }
 }

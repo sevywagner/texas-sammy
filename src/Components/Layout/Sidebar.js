@@ -10,7 +10,7 @@ const Sidebar = (props) => {
         <div className={styles.sidebar}>
             <p className={styles.title}>{props.title}</p>
             <div className={styles.links}>
-                {props.paths.map((path) => <NavLink className={styles['link-item']} to={path.url}>{path.title}</NavLink>)}
+                {props.paths.map((path) => <NavLink key={Math.random()} className={styles['link-item']} to={path.url}>{path.title}</NavLink>)}
             </div>
         </div>
     );
