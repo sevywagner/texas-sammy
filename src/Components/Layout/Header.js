@@ -30,7 +30,7 @@ const MobileHeader = () => {
                 </nav>
             </div>}
 
-            <button className={styles.dropdown} onClick={showNavToggle}>Nav {showNav ? '⬆' : '⬇'} </button>
+            <button className={styles.dropdown} onClick={showNavToggle}>Nav {showNav ? '↑' : '↓'} </button>
         </div>
     );
 }
