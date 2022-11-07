@@ -1,0 +1,9 @@
+.content {
+    width: 80%;
+}
+
+.comittees {
+    display: flex;
+    justify-content: center;
+}
+

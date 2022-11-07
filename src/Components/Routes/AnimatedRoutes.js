@@ -7,6 +7,7 @@ import Recruitment from "../../Pages/Recruitment";
 import Contact from "../../Pages/Contact";
 import Centennial from "../../Pages/Alumni/Centennial";
 import History from "../../Pages/Alumni/History";
+import Comittees from "../../Pages/Council/Comittees";
 
 const AnimatedRoutes = () => {
     return (
@@ -18,6 +19,7 @@ const AnimatedRoutes = () => {
                     <Route path="/texas-sammy/alumni/history" element={<History />} />
                 <Route path='/texas-sammy/contact' element={<Contact />} />
                 <Route path='/texas-sammy/council' element={<Council />} />
+                    <Route path='/texas-sammy/council/comittees' element={<Comittees />} />
                 <Route path='/texas-sammy/recruitment' element={<Recruitment />} />
             </Routes>
         </Outline>

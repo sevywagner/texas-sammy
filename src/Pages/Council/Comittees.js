@@ -1,11 +1,11 @@
-import Sidebar from "../../Components/Layout/Sidebar";
 import { useContext } from "react";
 import sidebarContext from "../../Components/Context/sidebar-context";
+import Sidebar from "../../Components/Layout/Sidebar";
+import styles from './comittees.module.css';
 import { Navigate } from "react-router-dom";
-import styles from './Css/history.module.css';
 import { motion } from "framer-motion";
 
-const History = () => {
+const Comittees = () => {
     const sideCtx = useContext(sidebarContext);
 
     return (
@@ -15,17 +15,18 @@ const History = () => {
             exit={{transform: "translateY(100vh)"}}
         >
             {sideCtx.paths ? 
-                <div className={styles.history}>
-                    <Sidebar paths={sideCtx.paths} title={sideCtx.title} />
-                    <div className={styles.content}>
-                        <h1>History</h1>
-                    </div>
+            <div className={styles.comittees}>
+                <Sidebar title='Council' paths={sideCtx.paths} />
+                <div className={styles.content}>
+                    <h1>Comittees</h1>
                 </div>
+            </div>
             :
-            <Navigate to="/texas-sammy/alumni" />
+            <Navigate to='/texas-sammy/council' />
             }
+            
         </motion.div>
     );
 }
 
-export default History
+export default Comittees;

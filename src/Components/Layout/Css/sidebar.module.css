@@ -5,8 +5,8 @@
 .title {
     font-size: 20px;
     font-family: 'Avenir';
-    text-align: left;
-    margin-left: 10px;
+    text-align: right;
+    margin-right: 10px;
 }
 
 .links {
@@ -18,7 +18,7 @@
     text-decoration: none;
     padding: 10px;
     color: purple;
-    text-align: left;
+    text-align: right;
 }
 
 .link-item:hover {
@@ -34,7 +34,7 @@
 
     .title {
         text-align: center;
-        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .sidebar {

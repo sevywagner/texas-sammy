@@ -5,7 +5,15 @@
 }
 
 .content {
-    width: 80%;
+    width: 60%;
+}
+
+.side {
+    width: 20%;
+}
+
+.fill {
+    width: 20%;
 }
 
 .composites {
@@ -31,6 +39,15 @@
     .alumni {
         flex-direction: column;
     }
+
+    .fill {
+        display: none;
+    }
+
+    .side {
+        width: 100%;
+    }
+
     .content {
         width: 100%;
     }

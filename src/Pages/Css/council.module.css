@@ -1,0 +1,18 @@
+.council {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding-left: 5vh;
+    padding-right: 5vh;
+    width: 60%;
+}
+
+.fill {
+    width: 20%;
+}
+
+.side {
+    width: 20%;
+}

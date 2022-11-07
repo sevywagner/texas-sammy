@@ -70,7 +70,9 @@ const Alumni = () => {
             exit={{opacity: 0}}
             className={styles.alumni}
         >
-            <Sidebar title="Alumni" paths={paths}/>
+            <div className={styles.side}>
+                <Sidebar title="Alumni" paths={paths}/>
+            </div>
             <div className={styles.content}>
                 <h1>Alumni</h1>
                 <div className={styles.composites}>
@@ -79,6 +81,7 @@ const Alumni = () => {
                     <button onClick={nextHandler} className={styles['composite-nav']}>{`>`}</button>
                 </div>
             </div>
+            <div className={styles.fill}></div>
         </motion.div>
     );
 }
