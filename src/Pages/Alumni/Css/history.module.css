@@ -4,13 +4,37 @@
     justify-content: center;
 }
 
+.side {
+    width: 20%;
+}
+
 .content {
-    width: 80%;
+    width: 60%;
+}
+
+.fill {
+    width: 20%;
+}
+
+.pg {
+    font-size: 20px;
+    font-family: "Avenir";
+    padding: 5vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px 5px black;
+    background-color: rgb(255, 218, 151);
+    text-decoration: underline;
+    line-height: 35px;
 }
 
 @media only screen and (max-width: 700px) {
     .history {
         flex-direction: column;
+    }
+
+    .side {
+        width: 100%;
     }
 
     .content {

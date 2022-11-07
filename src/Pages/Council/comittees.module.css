@@ -1,9 +1,18 @@
 .content {
-    width: 80%;
+    width: 60%;
+}
+
+.side {
+    width: 20%;
+}
+
+.fill {
+    width: 20%;
 }
 
 .comittees {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 

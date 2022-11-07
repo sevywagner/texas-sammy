@@ -4,8 +4,8 @@
 }
 
 .content {
-    padding-left: 5vh;
-    padding-right: 5vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
     width: 60%;
 }
 
@@ -15,4 +15,19 @@
 
 .side {
     width: 20%;
+}
+
+@media only screen and (max-width: 700px) {
+    .council {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .side {
+        width: 100%;
+    }
 }

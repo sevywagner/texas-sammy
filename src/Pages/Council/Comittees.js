@@ -16,10 +16,13 @@ const Comittees = () => {
         >
             {sideCtx.paths ? 
             <div className={styles.comittees}>
-                <Sidebar title='Council' paths={sideCtx.paths} />
+                <div className={styles.side}>
+                    <Sidebar title='Council' paths={sideCtx.paths} />
+                </div>
                 <div className={styles.content}>
                     <h1>Comittees</h1>
                 </div>
+                <div className={styles.fill}></div>
             </div>
             :
             <Navigate to='/texas-sammy/council' />

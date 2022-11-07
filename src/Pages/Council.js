@@ -33,8 +33,28 @@ const Council = () => {
             number: '(706) - 296 - 0567',
             year: '(PC, \'20)',
             title: 'Vice Prior',
+            picUrl: 'Sachio_Goodie'
+        },
+        {
+            name: 'Alex Natelson',
+            number: '(832) - 249 - 0084',
+            year: '(PC, \'20)',
+            title: 'Exchequer',
             picUrl: 'Alex_Natelson'
-        }
+        },
+        {
+            name: 'Richard Yang',
+            number: '(214) - 208 - 8600',
+            year: '(PC, \'21)',
+            title: 'Financial Secretary',
+            picUrl: 'Richard_Yang'
+        },
+        {
+            name: 'Alex Suster',
+            year: '(PC, \'21)',
+            title: 'Risk Manager',
+            picUrl: 'Alex_Suster'
+        },
     ]
 
     useEffect(() => {
