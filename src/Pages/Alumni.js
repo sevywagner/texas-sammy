@@ -75,7 +75,7 @@ const Alumni = () => {
                 <h1>Alumni</h1>
                 <div className={styles.composites}>
                     <button onClick={prevHandler} className={styles['composite-nav']}>{`<`}</button>
-                    <img width="600" height="400" src={picUrl} />
+                    <img src={picUrl} />
                     <button onClick={nextHandler} className={styles['composite-nav']}>{`>`}</button>
                 </div>
             </div>

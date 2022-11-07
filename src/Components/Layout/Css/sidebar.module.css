@@ -26,6 +26,21 @@
     color: rgb(213, 138, 0);
 }
 
+@media only screen and (max-width: 700px) {
+    .links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
+
 @keyframes nav-hover {
     0% {
         color: purple;
