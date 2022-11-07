@@ -17,10 +17,6 @@ const Alumni = () => {
             title: 'Composites'
         },
         {
-            url: '/texas-sammy/alumni/centennial',
-            title: 'Centennial'
-        },
-        {
             url: '/texas-sammy/alumni/history',
             title: 'History'
         }

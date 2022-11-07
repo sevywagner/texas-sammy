@@ -12,7 +12,7 @@ const Council = () => {
     const paths = [
         {
             url: '/texas-sammy/council',
-            title: 'Council'
+            title: '2022-2023'
         },
         {
             url: '/texas-sammy/council/comittees',

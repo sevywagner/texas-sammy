@@ -20,11 +20,11 @@
     font-size: 20px;
     font-family: "Avenir";
     padding: 5vh;
-    border: 2px solid black;
     border-radius: 20px;
-    background-color: rgb(255, 218, 151);
-    text-decoration: underline;
     line-height: 35px;
+    margin: 10vh;
+    box-shadow: 20px 20px 45px 5px black;
+    background-color: white;
 }
 
 @media only screen and (max-width: 700px) {
@@ -38,5 +38,15 @@
 
     .content {
         width: 100%;
+    }
+
+    .pg {
+        width: 100%;
+        margin: 0vh;
+        padding: 0;
+        border-radius: 0;
+        margin-bottom: 5vh;
+        box-shadow: none;
+        background-color: whitesmoke;
     }
 }
