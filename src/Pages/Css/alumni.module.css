@@ -21,6 +21,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10vh;
+    box-shadow: 20px 20px 45px 5px black;
+    border-radius: 20px;
+    margin: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .composite-nav {
@@ -45,6 +50,13 @@
     }
 }
 
+@media only screen and (max-width: 1150px) {
+    .composites img {
+        width: 350px;
+        height: 200px;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .alumni {
         flex-direction: column;
@@ -60,6 +72,9 @@
 
     .content {
         width: 100%;
+        box-shadow: none;
+        border-radius: 20px;
+        margin: 0vh;
     }
 
     .composites img {

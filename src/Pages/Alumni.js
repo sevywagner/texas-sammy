@@ -45,7 +45,7 @@ const Alumni = () => {
     }
 
     const prevHandler = () => {
-        if (counter == 1) {
+        if (counter === 1) {
             const pic = require('./../Pictures/Composite (Carousel) Photos/Comp42.jpg');
             setPicUrl(pic);
             setCounter(42);

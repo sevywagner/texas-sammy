@@ -21,6 +21,24 @@ const Comittees = () => {
                 </div>
                 <div className={styles.content}>
                     <h1>Comittees</h1>
+                    <div className={styles.info}>
+                        <div>
+                            <p className={styles['section-title']}>Rush Team</p>
+                            <p className={styles.subtitle}>Chair: </p>
+                            <p>Ben Gordon (PC '20)</p>
+                            <p className={styles.subtitle}>Captains: </p>
+                            <p>Aidan Cogan (PC '21)</p>
+                            <p>Max Stein (PC '21)</p>
+                            <p>Joe Weiner (PC '21)</p>
+                        </div>
+                        <div>
+                            <p className={styles['section-title']}>Alumni</p>
+                            <p className={styles.subtitle}>Chairs: </p>
+                            <p>Max Stein (PC '21)</p>
+                            <p>Adam Lowey (PC '21)</p>
+                            <p>Brandon Weinberg (PC '20)</p>
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.fill}></div>
             </div>

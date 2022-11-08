@@ -1,5 +1,8 @@
 .content {
     width: 60%;
+    box-shadow: 20px 20px 45px 5px black;
+    border-radius: 20px;
+    margin: 5vh;
 }
 
 .side {
@@ -16,3 +19,42 @@
     justify-content: center;
 }
 
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5vh;
+    text-align: left;
+    font-size: 18px;
+}
+
+.section-title {
+    font-family: 'Avenir';
+    font-size: 30px;
+}
+
+.subtitle {
+    font-size: 27px;
+    color: gray;
+}
+
+@media only screen and (max-width: 700px) {
+    .comittees {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 20px;
+        margin: 0vh;
+    }
+
+    .side {
+        width: 100%;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+}
