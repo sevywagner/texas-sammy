@@ -25,3 +25,20 @@ iframe {
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 700px) {
+    .pg {
+        margin: 0vh;
+        background-color: whitesmoke;
+        box-shadow: none;
+        font-size: 15px;
+    }
+
+    iframe {
+        width: 280px;
+        height: 157.5px;
+        padding: 0vh;
+        box-shadow: none;
+        margin-bottom: 2vh;
+    }
+}

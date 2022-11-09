@@ -72,3 +72,12 @@ textarea {
     background-color: purple;
     color: white;
 }
+
+@media only screen and (max-width: 700px) {
+    form {
+        width: 100%;
+        box-shadow: none;
+        margin-bottom: 0vh;
+        background-color: whitesmoke;
+    }
+}
