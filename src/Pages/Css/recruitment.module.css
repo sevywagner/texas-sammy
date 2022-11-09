@@ -21,9 +21,12 @@ iframe {
     background-color: white;
 }
 
-.form-wrap {
-    display: flex;
-    justify-content: center;
+select {
+    border: none;
+    border-radius: 15px;
+    margin: 4vh;
+    border: 1px solid black;
+    padding: 1vh;
 }
 
 @media only screen and (max-width: 700px) {

@@ -1,0 +1,25 @@
+.submit {
+    font-family: 'Avenir';
+    font-size: 15px;
+    margin: 4vh;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: purple;
+    border: 1px solid purple;
+}
+
+.submit:hover {
+    background-color: purple;
+    color: white;
+}
+
+.form-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.invalid {
+    background-color: rgba(255, 0, 0, 0.576);
+}

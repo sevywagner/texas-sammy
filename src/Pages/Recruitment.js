@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import styles from './Css/recruitment.module.css'
+import RecruitForm from "../Components/Recruitment/RecruitForm";
 
 const Recruitment = () => {
     return (
@@ -35,16 +36,7 @@ const Recruitment = () => {
                 Ben Gordan, Recruitment Chair, PC &rsquo;20
             </p>
             
-            <div className={styles['form-wrap']}>
-                <form>
-                    <label>Name</label>
-                    <input type='text' />
-                    <label>Phone Number</label>
-                    <input type='text' />
-                    <label>Email</label>
-                    <input type='text' />
-                </form>
-            </div>
+            <RecruitForm />
             
         </motion.div>
     );
