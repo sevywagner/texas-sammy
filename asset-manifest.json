@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/texas-sammy/static/css/main.8c950a3e.css",
-    "main.js": "/texas-sammy/static/js/main.76168040.js",
+    "main.css": "/texas-sammy/static/css/main.7279188d.css",
+    "main.js": "/texas-sammy/static/js/main.d326998b.js",
     "static/media/Jacob_Rose.jpg": "/texas-sammy/static/media/Jacob_Rose.0b10c351be69920e02cd.jpg",
     "static/media/HomePagePic_2.png": "/texas-sammy/static/media/HomePagePic_2.4263ac94f53949017836.png",
     "static/media/Joe_Weiner.jpg": "/texas-sammy/static/media/Joe_Weiner.2ea3370848925554004e.jpg",
@@ -60,11 +60,11 @@
     "static/media/Logo_Option2.png": "/texas-sammy/static/media/Logo_Option2.b2af06c7421dfb063d88.png",
     "static/media/facebook.png": "/texas-sammy/static/media/facebook.d81c67bd056be19d0ad2.png",
     "index.html": "/texas-sammy/index.html",
-    "main.8c950a3e.css.map": "/texas-sammy/static/css/main.8c950a3e.css.map",
-    "main.76168040.js.map": "/texas-sammy/static/js/main.76168040.js.map"
+    "main.7279188d.css.map": "/texas-sammy/static/css/main.7279188d.css.map",
+    "main.d326998b.js.map": "/texas-sammy/static/js/main.d326998b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c950a3e.css",
-    "static/js/main.76168040.js"
+    "static/css/main.7279188d.css",
+    "static/js/main.d326998b.js"
   ]
 }
