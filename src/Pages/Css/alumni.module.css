@@ -72,6 +72,9 @@
 
     .content {
         width: 100%;
+    }
+
+    .composites {
         box-shadow: none;
         border-radius: 20px;
         margin: 0vh;
