@@ -1,0 +1,27 @@
+iframe {
+    width: 560px;
+    height: 315px;
+    padding: 5vh;
+    box-shadow: 20px 20px 45px 5px black;
+    border-radius: 15px;
+    margin-bottom: 10vh;
+}
+
+.pg {
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Avenir';
+    margin-left: 20vh;
+    margin-right: 20vh;
+    margin-bottom: 20vh;
+    line-height: 30px;
+    box-shadow: 20px 20px 45px 5px black;
+    padding: 5vh;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.form-wrap {
+    display: flex;
+    justify-content: center;
+}

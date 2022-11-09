@@ -1,0 +1,74 @@
+form {
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10vh;
+    box-shadow: 20px 20px 45px 5px black;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin: 4vh;
+    border: 1px solid black;
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Avenir';
+    text-align: left;
+    margin-left: 4vh;
+}
+
+.invalid {
+    background-color: rgba(214, 0, 0, 0.738);
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error-text {
+    color: red;
+    font-size: 25px;
+    font-family: "Avenir";
+    margin-bottom: 5vh;
+}
+
+.sent {
+    font-size: 25px;
+    font-family: "Avenir";
+    margin-bottom: 5vh;
+}
+
+textarea {
+    padding: 10px;
+    padding-bottom: 20vh;
+    border: none;
+    border-radius: 15px;
+    margin: 4vh;
+    border: 1px solid black;
+}
+
+.submit {
+    font-family: 'Avenir';
+    font-size: 15px;
+    margin: 4vh;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: purple;
+    border: 1px solid purple;
+}
+
+.submit:hover {
+    background-color: purple;
+    color: white;
+}
