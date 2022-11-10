@@ -9,12 +9,16 @@
     font-weight: 30%;
 }
 
+ul {
+    list-style: none;
+}
 
 .nav-item:hover {
     animation: nav-hover .3s ease-in;
     background-color: rgb(213, 138, 0);
     color: white;
 }
+
 
 .logo {
     height: 20vh;
@@ -54,6 +58,56 @@ nav {
 
 .mobile-header {
     display: none;
+}
+
+.routes {
+    display: flex;
+    justify-content: center;
+}
+
+.subnav-content {
+    display: none;
+    z-index: 1;
+    position: absolute;
+}
+
+.subnav-item {
+    font-family: 'Avenir';
+    text-decoration: none;
+    padding: 16px;
+    font-size: 22px;
+    border-radius: 2px;
+    color: white;
+    line-height: 70px;
+    font-weight: 30%;
+    background-color: rgba(128, 0, 128, 0.449);
+    border-radius: 5px;
+    
+}
+
+.subnav:hover > .subnav-content {
+    animation: dropdown .3s ease-out;
+    display: block;
+}
+
+.subnav-content a:hover {
+    animation: subnav-hover .3s ease-in-out;
+    padding: 15px;
+    border: 1px solid rgb(128, 0, 128);
+    background-color: white;
+    color: rgb(128, 0, 128);
+}
+
+@keyframes dropdown {
+    0% {
+        transform: translateY(-5vh);
+        display: none;
+    }
+
+    100% {
+        transform: translateY(0vh);
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -109,5 +163,17 @@ nav {
     to {
         background-color: rgb(213, 138, 0);
         color: white;
+    }
+}
+
+@keyframes subnav-hover {
+    from {
+        background-color: rgba(128, 0, 128, 0.449);
+        color: white;
+    }
+    to {
+        background-color: white;
+        color: rgb(128, 0, 128);
+        border: 1px solid rgb(128, 0, 128);
     }
 }

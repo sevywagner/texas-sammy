@@ -3,6 +3,7 @@
     box-shadow: 20px 20px 45px 5px black;
     border-radius: 20px;
     margin: 5vh;
+    background-color: rgba(219, 219, 219, 0.342);
 }
 
 .side {
@@ -25,7 +26,7 @@
     justify-content: space-around;
     padding: 5vh;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .section-title {
@@ -38,6 +39,11 @@
     color: gray;
 }
 
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
 @media only screen and (max-width: 700px) {
     .comittees {
         flex-direction: column;
@@ -48,6 +54,10 @@
         box-shadow: none;
         border-radius: 20px;
         margin: 0vh;
+    }
+
+    .block {
+        border-bottom: 1px solid black;
     }
 
     .side {

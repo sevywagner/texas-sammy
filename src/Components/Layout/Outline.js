@@ -7,6 +7,9 @@ const Outline = (props) => {
         <div className={styles.outline}>
             <Header />
             {props.children}
+            <div className={styles.donate}>
+                <a href="https://donorbox.org/texas-sammy-donation?default_interval=o">Donate</a>
+            </div>
             <Footer />
         </div>
     );

@@ -22,7 +22,7 @@ const Comittees = () => {
                 <div className={styles.content}>
                     <h1>Comittees</h1>
                     <div className={styles.info}>
-                        <div>
+                        <div className={styles.block}>
                             <p className={styles['section-title']}>Rush Team</p>
                             <p className={styles.subtitle}>Chair: </p>
                             <p>Ben Gordon (PC '20)</p>
@@ -31,7 +31,7 @@ const Comittees = () => {
                             <p>Max Stein (PC '21)</p>
                             <p>Joe Weiner (PC '21)</p>
                         </div>
-                        <div>
+                        <div className={styles.block}>
                             <p className={styles['section-title']}>Alumni</p>
                             <p className={styles.subtitle}>Chairs: </p>
                             <p>Max Stein (PC '21)</p>
