@@ -45,7 +45,7 @@ const Contact = () => {
             return;
         }
 
-        emailjs.sendForm('service_kw159gn', 'template_wgfqmd7', formRef.current, 'btwNFPHJIznru2lf6')
+        emailjs.sendForm('service_819shjh', 'template_71ea9of', formRef.current, 'sZsdUfD-r40m-DntK')
         .then((result) => {
             console.log(result);
             setSent(true);
