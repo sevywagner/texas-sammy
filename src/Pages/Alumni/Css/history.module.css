@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.title {
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+
 .side {
     width: 20%;
 }

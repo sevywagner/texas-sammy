@@ -70,7 +70,7 @@ const Alumni = () => {
                 <Sidebar title="Alumni" paths={paths}/>
             </div>
             <div className={styles.content}>
-                <h1>Alumni</h1>
+                <p className={styles.title}>Alumni</p>
                 <div className={styles.composites}>
                     <button onClick={prevHandler} className={styles['composite-nav']}>{`<`}</button>
                     <img src={picUrl} />

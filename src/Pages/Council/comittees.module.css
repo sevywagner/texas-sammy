@@ -1,5 +1,13 @@
 .content {
     width: 60%;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+
+.wrap {
     box-shadow: 20px 20px 45px 5px black;
     border-radius: 20px;
     margin: 5vh;
@@ -31,7 +39,6 @@
 .section-title {
     font-family: 'Avenir';
     font-size: 30px;
-    text-align: center;
 }
 
 .subtitle {
@@ -51,6 +58,9 @@
 
     .content {
         width: 100%;
+    }
+
+    .wrap {
         box-shadow: none;
         border-radius: 20px;
         margin: 0vh;

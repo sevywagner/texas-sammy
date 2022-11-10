@@ -9,7 +9,7 @@ const Recruitment = () => {
             animate={{opacity: 1}}
             exit={{opacity: 0}}
         >
-            <h1>Recruitment</h1>
+            <p className={styles.title}>Recruitment</p>
             <iframe
                 src="https://www.youtube.com/embed/IzsNBPnhcLo" 
                 title="YouTube video player"

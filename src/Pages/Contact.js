@@ -76,6 +76,8 @@ const Contact = () => {
             className={styles.contact}
         >
 
+            <p className={styles.title}>Contact</p>
+
             {error && <p className={styles['error-text']}>Form is invalid, please make sure you filled in all of the fields correctly</p>}
             {sent && <p className={styles.sent}>Form has been sent, we'll get back to you soon.</p>}
             {sendError && <p className={styles['error-text']}>We had trouble sending the email, please try again.</p>}

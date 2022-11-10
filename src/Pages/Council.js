@@ -75,18 +75,21 @@ const Council = () => {
                     <Sidebar title='Council' paths={paths} />
                 </div>
                 <div className={styles.content}>
-                    {members.map((member => <Member key={Math.random()} member={member} />))}
-                    <div className={styles['wrapper']}>
-                        <div className={styles.info}>
-                            <p className={styles.title}>Socials</p>
-                            <p>Phillip Tellez (PC, '20)</p>
-                            <p>Joe Weiner (PC, '21)</p>
-                            <p>Aidan Cogan (PC, '21)</p>
-                        </div>
-                        <div className={styles.pic}>
-                            <img height='150' src={phil} />
-                            <img height='150' src={joe} />
-                            <img height='150' src={aidan} />
+                    <p className={styles['page-title']}>2022-2023 Council</p>
+                    <div className={styles.wrap}>
+                        {members.map((member => <Member key={Math.random()} member={member} />))}
+                        <div className={styles['wrapper']}>
+                            <div className={styles.info}>
+                                <p className={styles.title}>Socials</p>
+                                <p>Phillip Tellez (PC, '20)</p>
+                                <p>Joe Weiner (PC, '21)</p>
+                                <p>Aidan Cogan (PC, '21)</p>
+                            </div>
+                            <div className={styles.pic}>
+                                <img height='150' src={phil} />
+                                <img height='150' src={joe} />
+                                <img height='150' src={aidan} />
+                            </div>
                         </div>
                     </div>
                 </div>

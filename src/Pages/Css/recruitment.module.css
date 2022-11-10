@@ -21,6 +21,11 @@ iframe {
     background-color: white;
 }
 
+.title {
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+
 select {
     border: none;
     border-radius: 15px;
