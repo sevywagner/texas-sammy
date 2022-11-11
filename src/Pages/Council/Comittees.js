@@ -20,7 +20,7 @@ const Comittees = () => {
                     <Sidebar title='Council' paths={sideCtx.paths} />
                 </div>
                 <div className={styles.content}>
-                    <p className={styles.title}>Comittees</p>
+                    <p className={styles.title}>Committees</p>
                     <div className={styles.wrap}>
                         <div className={styles.info}>
                             <div className={styles.block}>

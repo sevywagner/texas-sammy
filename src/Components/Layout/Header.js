@@ -6,15 +6,13 @@ import { useState } from "react";
 const MobileHeader = () => {
     const [showNav, setShowNav] = useState(false);
 
-    const showNavToggle = () => {
-        setShowNav((prevState) => !prevState);
-    }
-
     return (
         <div className={styles['mobile-header']}>
-            <div className={styles.logo}></div>
+            <NavLink to='/texas-sammy'>
+                <div className={styles.logo}></div>
+            </NavLink>
+            
 
-            {showNav &&
             <div>
                 <nav>
                     <div className={styles.routes}>
@@ -35,9 +33,8 @@ const MobileHeader = () => {
                         </div>
                     </div>
                 </nav>
-            </div>}
+            </div>
 
-            <button className={styles.dropdown} onClick={showNavToggle}>Nav {showNav ? '↑' : '↓'} </button>
         </div>
     );
 }
@@ -47,7 +44,9 @@ const Header = () => {
         <div>
             <MobileHeader />
             <div className={styles.header}>
-                <div className={styles.logo}></div>
+                <NavLink to='/texas-sammy'>
+                    <div className={styles.logo}></div>
+                </NavLink>
                 <nav>
                     <div className={styles['small-logo']}></div>
                     <div className={styles.routes}>
@@ -65,7 +64,7 @@ const Header = () => {
                         <div className={styles.subnav}>
                             <NavLink key={Math.random()} className={styles['nav-item']} to='/texas-sammy/council'>Council</NavLink>
                             <div className={styles['subnav-content']}>
-                                <NavLink className={styles['subnav-item']} to='/texas-sammy/council/comittees'>Comittees</NavLink>
+                                <NavLink className={styles['subnav-item']} to='/texas-sammy/council/comittees'>Committees</NavLink>
                             </div>
                         </div> 
 

@@ -19,7 +19,7 @@ const Council = () => {
         },
         {
             url: '/texas-sammy/council/comittees',
-            title: 'Comittees'
+            title: 'Committees'
         }
     ];
 
