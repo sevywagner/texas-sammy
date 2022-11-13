@@ -2,7 +2,7 @@
   "name": "texas-sammy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sevywagner.github.io/texas-sammy",
+  "homepage": "https://texassammy.org/texas-sammy",
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "@testing-library/jest-dom": "^5.16.5",

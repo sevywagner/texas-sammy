@@ -67,7 +67,7 @@ const RecruitForm = () => {
     return (
         <Fragment>
 
-            {error && <p className={styles['error-text']}>The form is invalid. Please make sure you correctly filled in the required feilds.</p>}
+            {error && <p className={styles['error-text']}>The form is invalid. Please make sure you correctly filled in the required fields.</p>}
             {hasSent && <p className={styles.sent}>Your form has been sent.</p>}
             {sendingError && <p className={styles['error-text']}>There was a problem while sending the form. Please try again.</p>}
 
