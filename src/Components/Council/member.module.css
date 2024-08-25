@@ -12,3 +12,8 @@
 .title {
     font-size: 30px;
 }
+
+.form {
+    display: flex;
+    justify-content: center;
+}

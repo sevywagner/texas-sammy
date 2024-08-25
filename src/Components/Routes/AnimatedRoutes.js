@@ -8,6 +8,7 @@ import Contact from "../../Pages/Contact";
 import Centennial from "../../Pages/Alumni/Centennial";
 import History from "../../Pages/Alumni/History";
 import Comittees from "../../Pages/Council/Comittees";
+import UpdateMembers from "../../Pages/Admin/UpdateMembers";
 
 const AnimatedRoutes = () => {
     return (
@@ -21,6 +22,7 @@ const AnimatedRoutes = () => {
                 <Route path='/texas-sammy/council' element={<Council />} />
                     <Route path='/texas-sammy/council/comittees' element={<Comittees />} />
                 <Route path='/texas-sammy/recruitment' element={<Recruitment />} />
+                <Route path="/texas-sammy/update-members" element={<UpdateMembers />} />
             </Routes>
         </Outline>
     );

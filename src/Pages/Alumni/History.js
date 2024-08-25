@@ -1,5 +1,5 @@
 import Sidebar from "../../Components/Layout/Sidebar";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import sidebarContext from "../../Components/Context/sidebar-context";
 import { Navigate } from "react-router-dom";
 import styles from './Css/history.module.css';
@@ -8,16 +8,31 @@ import { motion } from "framer-motion";
 const History = () => {
     const sideCtx = useContext(sidebarContext);
 
+    const paths = [
+        {
+            url: '/texas-sammy/alumni',
+            title: 'Composites'
+        },
+        {
+            url: '/texas-sammy/alumni/history',
+            title: 'History'
+        }
+    ]
+
+
+    useEffect(() => {
+        sideCtx.setPathsHandler(paths);
+    }, []);
+
     return (
         <motion.div
             initial={{transform: "translateY(-100vh)"}}
             animate={{transform: "translateY(0vh)"}}
             exit={{transform: "translateY(100vh)"}}
         >
-            {sideCtx.paths ? 
                 <div className={styles.history}>
                     <div className={styles.side}>
-                        <Sidebar paths={sideCtx.paths} title='Alumni' />
+                        {sideCtx.paths && <Sidebar paths={sideCtx.paths} title='Alumni' />}
                     </div>
                     <div className={styles.content}>
                         <p className={styles.title}>History</p>
@@ -27,9 +42,6 @@ const History = () => {
                     </div>
                     <div className={styles.fill}></div>
                 </div>
-            :
-            <Navigate to="/texas-sammy/alumni" />
-            }
         </motion.div>
     );
 }

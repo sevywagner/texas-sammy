@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Sidebar from "../Components/Layout/Sidebar";
 import styles from './Css/council.module.css';
 import { useContext } from "react";
@@ -10,6 +10,7 @@ import joe from './../Pictures/CouncilPhotos/Joe_Weiner.jpg'
 import aidan from './../Pictures/CouncilPhotos/Aidan_Cogan.jpg'
 
 const Council = () => {
+    const [members, setMembers] = useState();
     const sideCtx = useContext(sidebarContext);
 
     const paths = [
@@ -23,46 +24,28 @@ const Council = () => {
         }
     ];
 
-    const members = [
-        {
-            name: 'Jacob Rose',
-            number: '(914) - 514 - 5477',
-            year: '(PC, \'19)',
-            title: 'Prior',
-            picUrl: 'Jacob_Rose'
-        },
-        {
-            name: 'Sachio Goodie',
-            number: '(706) - 296 - 0567',
-            year: '(PC, \'20)',
-            title: 'Vice Prior',
-            picUrl: 'Sachio_Goodie'
-        },
-        {
-            name: 'Alex Natelson',
-            number: '(832) - 249 - 0084',
-            year: '(PC, \'20)',
-            title: 'Exchequer',
-            picUrl: 'Alex_Natelson'
-        },
-        {
-            name: 'Richard Yang',
-            number: '(214) - 208 - 8600',
-            year: '(PC, \'21)',
-            title: 'Financial Secretary',
-            picUrl: 'Richard_Yang'
-        },
-        {
-            name: 'Alex Suster',
-            year: '(PC, \'21)',
-            title: 'Risk Manager',
-            picUrl: 'Alex_Suster'
-        },
-    ]
-
     useEffect(() => {
         sideCtx.setPathsHandler(paths);
+
+        fetch('https://texas-sammy-backend.onrender.com/get-members', {
+            method: 'POST',
+            body: JSON.stringify({ type: 'Council' }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then((response) => response.json()).then((data) => {
+            for (let i = 0; i < data.members.length; i++) {
+                data.members[i].image = data.files[i];
+            }
+            setMembers(data.members)
+        }).catch((err) => {
+            console.log(err);
+        })
+
     }, []);
+
+    let year = new Date().getFullYear();
+    year = new Date().getMonth() > 6 ? `${year}-${year + 1}` : `${year - 1}-${year}`;
 
     return (
         <motion.div
@@ -75,22 +58,10 @@ const Council = () => {
                     <Sidebar title='Council' paths={paths} />
                 </div>
                 <div className={styles.content}>
-                    <p className={styles['page-title']}>2022-2023 Council</p>
+                    <p className={styles['page-title']}>{year} Council</p>
+                    {!members && <p>Loading...</p>}
                     <div className={styles.wrap}>
-                        {members.map((member => <Member key={Math.random()} member={member} />))}
-                        <div className={styles['wrapper']}>
-                            <div className={styles.info}>
-                                <p className={styles.title}>Socials</p>
-                                <p>Phillip Tellez (PC, '20)</p>
-                                <p>Joe Weiner (PC, '21)</p>
-                                <p>Aidan Cogan (PC, '21)</p>
-                            </div>
-                            <div className={styles.pic}>
-                                <img height='150' src={phil} />
-                                <img height='150' src={joe} />
-                                <img height='150' src={aidan} />
-                            </div>
-                        </div>
+                        {members && members.map((member => <Member key={Math.random()} member={member} />))}
                     </div>
                 </div>
                 <div className={styles.fill}></div>

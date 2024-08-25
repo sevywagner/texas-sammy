@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import sidebarContext from "../../Components/Context/sidebar-context";
 import Sidebar from "../../Components/Layout/Sidebar";
 import styles from './comittees.module.css';
@@ -6,7 +6,56 @@ import { Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Comittees = () => {
+    const [alumni, setAlumni] = useState();
+    const [rChair, setRChair] = useState();
+    const [rCap, setRCap] = useState();
     const sideCtx = useContext(sidebarContext);
+
+    const paths = [
+        {
+            url: '/texas-sammy/council',
+            title: '2022-2023'
+        },
+        {
+            url: '/texas-sammy/council/comittees',
+            title: 'Committees'
+        }
+    ];
+
+    useEffect(() => {
+        sideCtx.setPathsHandler(paths);
+
+        if (!alumni) {
+            fetch('http://localhost:8080/get-members', {
+                method: 'POST',
+                body: JSON.stringify({ type: 'Committees' }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }).then((response) => response.json()).then((data) => {
+                let al = [];
+                let rCh = [];
+                let rCa = [];
+                for (let i = 0; i < data.members.length; i++) {
+    
+                    if (data.members[i].committee === 'A') {
+                        al.push(data.members[i])
+                    } else if (data.members[i].committee === 'R' && data.members[i].position === 'Chair') {
+                        rCh.push(data.members[i]);
+                    } else {
+                        rCa.push(data.members[i]);
+                    }
+                }
+
+                setAlumni(al);
+                setRChair(rCh);
+                setRCap(rCa);
+            }).catch((err) => {
+                console.log(err);
+            })
+        }
+    }, []);
+
 
     return (
         <motion.div
@@ -14,10 +63,9 @@ const Comittees = () => {
             animate={{transform: "translateY(0vh)"}}
             exit={{transform: "translateY(100vh)"}}
         >
-            {sideCtx.paths ? 
             <div className={styles.comittees}>
                 <div className={styles.side}>
-                    <Sidebar title='Council' paths={sideCtx.paths} />
+                    {sideCtx.paths && <Sidebar title='Council' paths={sideCtx.paths} />}
                 </div>
                 <div className={styles.content}>
                     <p className={styles.title}>Committees</p>
@@ -26,18 +74,14 @@ const Comittees = () => {
                             <div className={styles.block}>
                                 <p className={styles['section-title']}>Rush Team</p>
                                 <p className={styles.subtitle}>Chair: </p>
-                                <p>Ben Gordon (PC '20)</p>
+                                {rChair && rChair.map((m) => <p key={m.name}>{m.name} (PC, '{m.year})</p>)}
                                 <p className={styles.subtitle}>Captains: </p>
-                                <p>Aidan Cogan (PC '21)</p>
-                                <p>Max Stein (PC '21)</p>
-                                <p>Joe Weiner (PC '21)</p>
+                                {rCap && rCap.map((m) => <p key={m.name}>{m.name} (PC, '{m.year})</p>)}
                             </div>
                             <div className={styles.block}>
                                 <p className={styles['section-title']}>Alumni</p>
                                 <p className={styles.subtitle}>Chairs: </p>
-                                <p>Max Stein (PC '21)</p>
-                                <p>Adam Lowey (PC '21)</p>
-                                <p>Brandon Weinberg (PC '20)</p>
+                                {alumni && alumni.map((m) => <p key={m.name}>{m.name} (PC, '{m.year})</p>)}
                             </div>
                         </div>
                     </div>
@@ -45,10 +89,6 @@ const Comittees = () => {
                 </div>
                 <div className={styles.fill}></div>
             </div>
-            :
-            <Navigate to='/texas-sammy/council' />
-            }
-            
         </motion.div>
     );
 }
