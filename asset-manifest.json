@@ -1,20 +1,15 @@
 {
   "files": {
-    "main.css": "/texas-sammy/static/css/main.734862a1.css",
-    "main.js": "/texas-sammy/static/js/main.50050092.js",
-    "static/media/Jacob_Rose.jpg": "/texas-sammy/static/media/Jacob_Rose.0b10c351be69920e02cd.jpg",
+    "main.css": "/texas-sammy/static/css/main.abf758a3.css",
+    "main.js": "/texas-sammy/static/js/main.ee17bd64.js",
     "static/media/HomePagePic_2.png": "/texas-sammy/static/media/HomePagePic_2.4263ac94f53949017836.png",
     "static/media/Joe_Weiner.jpg": "/texas-sammy/static/media/Joe_Weiner.2ea3370848925554004e.jpg",
     "static/media/FooterShield.png": "/texas-sammy/static/media/FooterShield.dc5b833a678c102e8ccd.png",
     "static/media/Comp24.jpg": "/texas-sammy/static/media/Comp24.da8703ff65a285f8c53a.jpg",
-    "static/media/Alex_Natelson.jpg": "/texas-sammy/static/media/Alex_Natelson.0cc7408b94db18f308c0.jpg",
     "static/media/Comp27.jpg": "/texas-sammy/static/media/Comp27.fb3f1b5d39b8a04494db.jpg",
     "static/media/Comp38.jpg": "/texas-sammy/static/media/Comp38.15402075918158241ca0.jpg",
-    "static/media/Richard_Yang.jpg": "/texas-sammy/static/media/Richard_Yang.6e93e5b5de49aa606e5f.jpg",
     "static/media/Comp12.jpg": "/texas-sammy/static/media/Comp12.9b61158bf7a034ff9293.jpg",
     "static/media/Comp1.jpg": "/texas-sammy/static/media/Comp1.0b570a33893185e44f72.jpg",
-    "static/media/Splash_Background.jpg": "/texas-sammy/static/media/Splash_Background.22637f6b3acb05d25a64.jpg",
-    "static/media/Sachio_Goodie.jpg": "/texas-sammy/static/media/Sachio_Goodie.47b67d1942e10f5625c1.jpg",
     "static/media/Comp31.jpg": "/texas-sammy/static/media/Comp31.8f2d6328ae71513c654f.jpg",
     "static/media/Comp29.jpg": "/texas-sammy/static/media/Comp29.bc8fc0ae96b7ce125e0b.jpg",
     "static/media/Comp8.jpg": "/texas-sammy/static/media/Comp8.c048a83ac446b06225e5.jpg",
@@ -46,7 +41,7 @@
     "static/media/Comp10.jpg": "/texas-sammy/static/media/Comp10.4e76e70ee57fc8ccc83f.jpg",
     "static/media/Comp16.jpg": "/texas-sammy/static/media/Comp16.f331fbb9839992ca35e7.jpg",
     "static/media/Comp37.jpg": "/texas-sammy/static/media/Comp37.60e12557fe67481de1fb.jpg",
-    "static/media/Alex_Suster.jpg": "/texas-sammy/static/media/Alex_Suster.ec1d551f0a831204591f.jpg",
+    "static/media/Splash_Background1.jpg": "/texas-sammy/static/media/Splash_Background1.4f851d573384e3a875f4.jpg",
     "static/media/Comp39.jpg": "/texas-sammy/static/media/Comp39.3f4d82901f216960ebe7.jpg",
     "static/media/Comp42.jpg": "/texas-sammy/static/media/Comp42.2f5e4603a493ac27c41a.jpg",
     "static/media/Comp11.jpg": "/texas-sammy/static/media/Comp11.250d8a23941b19c6282f.jpg",
@@ -60,11 +55,11 @@
     "static/media/Logo_Option2.png": "/texas-sammy/static/media/Logo_Option2.b2af06c7421dfb063d88.png",
     "static/media/facebook.png": "/texas-sammy/static/media/facebook.d81c67bd056be19d0ad2.png",
     "index.html": "/texas-sammy/index.html",
-    "main.734862a1.css.map": "/texas-sammy/static/css/main.734862a1.css.map",
-    "main.50050092.js.map": "/texas-sammy/static/js/main.50050092.js.map"
+    "main.abf758a3.css.map": "/texas-sammy/static/css/main.abf758a3.css.map",
+    "main.ee17bd64.js.map": "/texas-sammy/static/js/main.ee17bd64.js.map"
   },
   "entrypoints": [
-    "static/css/main.734862a1.css",
-    "static/js/main.50050092.js"
+    "static/css/main.abf758a3.css",
+    "static/js/main.ee17bd64.js"
   ]
 }
