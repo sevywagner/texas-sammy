@@ -53,7 +53,7 @@ const UpdateMembers = () => {
             }
         }
 
-        fetch('http://localhost:8080/update', {
+        fetch('https://texas-sammy-backend.onrender.com/update', {
             method: 'POST',
             body: data
         }).then((response) => {

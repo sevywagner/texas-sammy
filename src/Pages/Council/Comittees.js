@@ -26,7 +26,7 @@ const Comittees = () => {
         sideCtx.setPathsHandler(paths);
 
         if (!alumni) {
-            fetch('http://localhost:8080/get-members', {
+            fetch('https://texas-sammy-backend.onrender.com/get-members', {
                 method: 'POST',
                 body: JSON.stringify({ type: 'Committees' }),
                 headers: {
@@ -63,14 +63,14 @@ const Comittees = () => {
             animate={{transform: "translateY(0vh)"}}
             exit={{transform: "translateY(100vh)"}}
         >
-            <div className={styles.comittees}>
+            {<div className={styles.comittees}>
                 <div className={styles.side}>
                     {sideCtx.paths && <Sidebar title='Council' paths={sideCtx.paths} />}
                 </div>
                 <div className={styles.content}>
                     <p className={styles.title}>Committees</p>
                     <div className={styles.wrap}>
-                        <div className={styles.info}>
+                        {alumni ? <div className={styles.info}>
                             <div className={styles.block}>
                                 <p className={styles['section-title']}>Rush Team</p>
                                 <p className={styles.subtitle}>Chair: </p>
@@ -83,12 +83,12 @@ const Comittees = () => {
                                 <p className={styles.subtitle}>Chairs: </p>
                                 {alumni && alumni.map((m) => <p key={m.name}>{m.name} (PC, '{m.year})</p>)}
                             </div>
-                        </div>
+                        </div> : <p>Loading...</p>}
                     </div>
                     
                 </div>
                 <div className={styles.fill}></div>
-            </div>
+            </div>}
         </motion.div>
     );
 }
